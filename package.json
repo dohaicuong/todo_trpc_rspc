@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"dev": "npx turbo dev"
+	},
+	"devDependencies": {
+		"turbo": "^1.5.6"
+	}
+}
