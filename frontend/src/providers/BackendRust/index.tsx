@@ -23,6 +23,8 @@ export const queryClient = new QueryClient({
 
 const rspc = createReactQueryHooks<BackendRustProcedures>()
 
+console.log(queryClient)
+
 export const {
   useContext: useBackendRustContext,
   useMutation: useBackendRustMutation,

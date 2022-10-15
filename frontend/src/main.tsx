@@ -1,12 +1,16 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+
 import { BackendRustProvider } from './providers/BackendRust'
+import { ThemeProvider } from './providers/Theme'
+import { RoutesProvider } from './providers/Routes'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BackendRustProvider>
-      <App />
-    </BackendRustProvider>
+    <ThemeProvider>
+      <BackendRustProvider>
+        <RoutesProvider />
+      </BackendRustProvider>
+    </ThemeProvider>
   </React.StrictMode>
 )
